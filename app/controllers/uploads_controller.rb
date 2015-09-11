@@ -11,6 +11,9 @@ class UploadsController < ApplicationController
     end
   end
 
+  def about
+  end
+
   private
 
   def upload_params
