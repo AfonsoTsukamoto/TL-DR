@@ -1,0 +1,105 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html, body{
+  margin:0px;
+  padding:0px;
+  background-color: #4A90E2;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin-top: 70px;
+}
+
+.navbar {
+  padding-top: 10px;
+  min-height: 140px;
+  background-color: transparent;
+  border-color: transparent;
+  .navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .navbar-center {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+  }
+
+  .nav{
+    li {
+      a {
+        color: white;
+      }
+    }
+  }
+  a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.upload {
+  padding: 10px;
+  border-radius: 30px;
+  border-style: double;
+  border-color: white;
+}
+
+.upload-container {
+  margin-top: 60px;
+}
+
+.submit-button {
+  border-radius: 4px;
+  border-color: white;
+  border-style: solid;
+  min-height: 34px;
+  min-width: 180px;
+  color: white;
+  background-color: transparent;
+
+  &:hover {
+    background-color: white;
+    color: #4A90E2;
+  }
+}
+
+.back-button {
+  padding: 8px 52px;
+  border-radius: 4px;
+  border-color: white;
+  border-style: solid;
+  min-height: 34px;
+  min-width: 180px;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  &:hover {
+    background-color: white;
+    color: #4A90E2;
+  }
+}
+
+.summary {
+  margin-top: 40px;
+  font-size: 22px;
+  color: white;
+}
+
+/////////////////
+/// UTILS
+/////////////////
+
+.utext-center {
+  text-align: center;
+}

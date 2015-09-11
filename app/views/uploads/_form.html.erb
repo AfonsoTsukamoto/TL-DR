@@ -1,0 +1,13 @@
+<%= form_for (@upload) do |f| %>
+  <div class="row">
+    <div class="upload-container col-md-8 col-md-offset-2">
+      <%= f.text_area :text, autocomplete: "off", rows: 20, cols: 100, class: "upload" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="upload-container col-md-8 col-md-offset-2 utext-center">
+      <%= f.submit 'Upload document', class: "submit-button"%>
+    </div>
+  </div>
+<% end %>

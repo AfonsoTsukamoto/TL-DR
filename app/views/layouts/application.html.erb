@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tl;Dr</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="/index"><%= image_tag("logo.svg") %></a>
+        </div>
+
+        <div class="navbar-center">
+          <%= image_tag("centered_text.svg") %>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Documentation</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+     <%= yield %>
+    </div>
+  </div>
+</body>
+</html>
